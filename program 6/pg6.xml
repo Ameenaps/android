@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFBEA"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FACEBOOK PROFILE"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:layout_centerHorizontal="true"/>
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/baseline_person_24"
+        android:layout_below="@id/title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ameena\nStudent"
+        android:textSize="20sp"
+        android:textColor="@android:color/black"
+        android:layout_below="@id/imageView3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:textAlignment="center" />
+
+    <LinearLayout
+        android:id="@+id/icon_row"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/baseline_home_24"
+            android:layout_margin="8dp" />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/baseline_chat_24"
+            android:layout_margin="8dp"/>
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+           android:src="@drawable/baseline_edit_24"
+            android:layout_margin="8dp"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/location_icon"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_below="@id/icon_row"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/baseline_location_on_24" />
+
+    <TextView
+        android:id="@+id/location_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="lives in kochi"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        android:layout_toEndOf="@id/location_icon"
+        android:layout_alignBottom="@id/location_icon"
+        android:layout_marginStart="8dp"/>
+
+    <ImageView
+        android:id="@+id/school_icon"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/baseline_school_24"
+        android:layout_below="@id/location_icon"
+        android:layout_marginTop="24dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="48dp"
+       />
+
+    <TextView
+        android:id="@+id/school_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="KMCT College Of Engineering"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        android:layout_toEndOf="@id/school_icon"
+        android:layout_alignBottom="@id/school_icon"
+        android:layout_marginStart="8dp" />
+
+</RelativeLayout>
